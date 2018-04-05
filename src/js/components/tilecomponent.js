@@ -69,7 +69,6 @@ class TileComponent extends React.Component {
       >
         <div style={{ textAlign: isMobile && "left" }}>
           <div
-            onClick={onTileClick}
             style={{
               borderBottom: `1px solid #ddd`,
               cursor: "pointer",
@@ -90,7 +89,6 @@ class TileComponent extends React.Component {
                 width: 330,
                 cursor: "pointer"
               }}
-              onClick={onTileClick}
             >
               <div
                 style={{
