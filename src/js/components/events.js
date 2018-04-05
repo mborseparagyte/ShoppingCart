@@ -40,15 +40,13 @@ const styles = theme => ({
       padding: 0,
       "label + &": {
         marginTop: theme.spacing.unit * 3
-      },
-      width: "140%"
+      }
     },
     textFieldRootLocation: {
       padding: 0,
       "label + &": {
         marginTop: theme.spacing.unit * 3
       },
-      width: "100%",
       marginLeft: "40.4%"
     },
     textFieldInput: {
@@ -57,7 +55,6 @@ const styles = theme => ({
       border: "1px solid #ced4da",
       fontSize: 16,
       padding: "10px 12px",
-      width: "calc(100% - 24px)",
       transition: theme.transitions.create(["border-color", "box-shadow"]),
       "&:focus": {
         borderColor: "#80bdff",
@@ -99,7 +96,7 @@ class Events extends React.Component {
   }
   componentDidMount() {
     AppActions.loadEvents();
-    this.searchEvents && this.searchEvents.focus();
+    //this.searchEvents && this.searchEvents.focus();
   }
   componentWillUnmount() {
     AppActions.reset();
@@ -156,9 +153,9 @@ class Events extends React.Component {
                         <div className="marTop20 marBot20 titleTextEvents" />
                         <div className={"searchBoxes marTop50"}>
                           <div className="row center-xs">
-                            <div className="">
+                            <div className="col-xs">
                               <TextField
-                                placeholder={"Search events or tags"}
+                                placeholder={"Product search"}
                                 value={this.state.searchValue}
                                 inputRef={e => (this.searchEvents = e)}
                                 InputProps={{
@@ -177,43 +174,8 @@ class Events extends React.Component {
                                 )}
                               />
                             </div>
-                            <div className="">
-                              <TextField
-                                placeholder={"City or location"}
-                                id={"bootstrap-input"}
-                                InputProps={{
-                                  disableUnderline: true,
-                                  classes: {
-                                    root: classes.textFieldRootLocation,
-                                    input: classes.textFieldInput
-                                  }
-                                }}
-                                InputLabelProps={{
-                                  shrink: true,
-                                  className: classes.textFieldFormLabel
-                                }}
-                              />
-                            </div>
-                            <div className={"searchdropdown"}>
-                              <Select
-                                value={this.state.selectedType}
-                                onChange={this.handleChange}
-                                name={"selectedType"}
-                                className={classes.selectEmpty}
-                              >
-                                {dateSearchOptions.map(currentOptions => {
-                                  return (
-                                    <MenuItem
-                                      value={currentOptions}
-                                      key={currentOptions}
-                                    >
-                                      {currentOptions}
-                                    </MenuItem>
-                                  );
-                                })}
-                              </Select>
-                            </div>
-                            <div className={""}>
+                           
+                            <div className={"col-xs"}>
                               <Button
                                 variant="raised"
                                 className={"searchbutton"}

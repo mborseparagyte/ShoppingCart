@@ -13,7 +13,7 @@ body {
 }
 input:focus {
   outline: none;
-}
+} 
 .searchClass {
   padding: 10px;
 }
@@ -390,7 +390,7 @@ h4 {
   max-width: 1090px !important;
 }
 .eventsTile {
-  margin-top: 100px;
+  margin-top: 170px;
 }
 .searchdropdown {
   margin-left: 84px;
@@ -400,7 +400,7 @@ h4 {
 }
 .searchbutton {
   line-height: 24px !important;
-  width: 200%;
+  width: 70%;
   margin-left: 3% !important;
   background-color: #f86820 !important;
   color: white !important;
@@ -414,7 +414,6 @@ h4 {
   width: 100%;
   z-index: 1;
   border-radius: 2px !important;
-  margin-top: -80px;
   color: #f86820;
 }
 
