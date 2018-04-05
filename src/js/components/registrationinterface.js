@@ -4,7 +4,7 @@ import { withStyles } from "material-ui/styles";
 import Stepper, { Step, StepLabel } from "material-ui/Stepper";
 import Button from "material-ui/Button";
 import Typography from "material-ui/Typography";
-import UserInformation from "./UserInformation.js";
+import UserInformation from "./userinformation.js";
 import TicketInfo from "./ticketinfo.js";
 import AppActions from "../actions/actions.js";
 import AppStore from "../stores/store.js";

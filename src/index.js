@@ -1,9 +1,9 @@
-import "./helpers/styles.js";
+import "./js/helpers/styles.js";
 import React from "react";
 import ReactDOM from "react-dom";
 import { Router, Route } from "react-router";
-import AppRoute from "./approute.js";
-import DetectDevice from "./detectdevice.js";
+import AppRoute from "./js/approute.js";
+import DetectDevice from "./js/detectdevice.js";
 import createBrowserHistory from "history/createBrowserHistory";
 
 const history = createBrowserHistory();
