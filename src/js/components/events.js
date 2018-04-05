@@ -153,7 +153,7 @@ class Events extends React.Component {
                         <div className="marTop20 marBot20 titleTextEvents" />
                         <div className={"searchBoxes marTop50"}>
                           <div className="row center-xs">
-                            <div className="col-xs">
+                            <div className="col-xs end-xs">
                               <TextField
                                 placeholder={"Product search"}
                                 value={this.state.searchValue}
@@ -175,7 +175,7 @@ class Events extends React.Component {
                               />
                             </div>
                            
-                            <div className={"col-xs"}>
+                            <div className={"col-xs start-xs"}>
                               <Button
                                 variant="raised"
                                 className={"searchbutton"}

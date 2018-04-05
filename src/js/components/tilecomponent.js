@@ -113,7 +113,7 @@ class TileComponent extends React.Component {
                 <div className="col-xs-9">
                   <div
                     className="box"
-                    style={{ fontSize: "small", height: 20 }}
+                    style={{ fontSize: "small", height: 50 }}
                   >
                     {tags &&
                       tags.map((tag, index) => (
