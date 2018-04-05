@@ -5,12 +5,23 @@ import Paper from "material-ui/Paper";
 import _ from "lodash";
 import GeoPattern from "geopattern";
 import Divider from "material-ui/Divider";
+import Button from 'material-ui/Button';
 const styles = theme => ({
   root: {
     flexGrow: 1
   },
   chip: {
     marginRight: 10
+  }, 
+  quickViewButton:{
+    width: "100%",
+    backgroundColor: "#1a1a1abf",
+    color: "white"
+  },
+  cartButton: {
+    width:"100%",
+    backgroundColor:"#57901f",
+    color:"white"
   },
   paper: theme.mixins.gutters({
     width: 330,
@@ -71,7 +82,7 @@ class TileComponent extends React.Component {
           <div
             style={{
               width: 330,
-              padding: 5
+              padding: 5 
             }}
           >
             <div
@@ -110,28 +121,15 @@ class TileComponent extends React.Component {
                 }}
               />
               <div className="row">
-                <div className="col-xs-9">
-                  <div
-                    className="box"
-                    style={{ fontSize: "small", height: 50 }}
-                  >
-                    {tags &&
-                      tags.map((tag, index) => (
-                        <span
-                          key={index}
-                          style={{
-                            color: "#45494E",
-                            fontSize: "smaller",
-                            marginRight: 10
-                          }}
-                        >
-                          #{tag}
-                        </span>
-                      ))}
-                  </div>
+                <div className="col-xs-6">
+                  <Button variant="raised" className={classes.quickViewButton}>
+                    Quick view
+      </Button>
                 </div>
-                <div className="col-xs-3">
-                  <div className="box">{}</div>
+                <div className="col-xs-6">
+                  <Button variant="raised" className={classes.cartButton}>
+                    Add to cart
+      </Button>
                 </div>
               </div>
             </div>
